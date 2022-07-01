@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&family=Oswald:wght@300&display=swap');
+
+body,div,input,button{
+  font-family: 'Anek Malayalam', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
