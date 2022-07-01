@@ -13,6 +13,7 @@ export default function Register() {
     if(localStorage.getItem("user")){
        history.push("/");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const toastOptions = {

@@ -10,7 +10,6 @@ import Login from "./pages/Login"
 import SetAvatar from './pages/SetAvatar'
 
 function App() {
-  const user=JSON.parse(localStorage.getItem("user"));
   return (
     <>
     <Router>

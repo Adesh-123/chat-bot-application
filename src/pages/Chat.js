@@ -20,6 +20,7 @@ export default function Chat() {
     } else {
       setCurrentUser(JSON.parse(localStorage.getItem("user")));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     if (currentUser) {

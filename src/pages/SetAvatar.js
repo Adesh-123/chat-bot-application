@@ -65,6 +65,7 @@ export default function SetAvatar() {
         setIsLoading(false);
     }    
     getavatar();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <>
