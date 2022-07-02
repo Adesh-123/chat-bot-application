@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import styled from "styled-components"
-import logo from "../assets/logo.svg"
+import logo from "../assets/logo.png"
 import {useHistory} from "react-router-dom"
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -85,7 +85,7 @@ export default function Register() {
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
             <img src={logo} alt="logo" />
-            <h1>snappy</h1>
+            <h1>Chat-Bot</h1>
           </div>
           <input
             type="text"
