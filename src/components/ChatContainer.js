@@ -13,7 +13,7 @@ export default function ChatContainer({ currentChat,currentUser,socket}) {
       const data= JSON.parse(localStorage.getItem('user'));
       const getallmsg=async()=>{
         try{
-          const res= await axios.post("https://messging-application.herokuapp.com/api/message/getallmessage",{
+          const res= await axios.post("https://chatbotapplicationbackend.onrender.com/api/message/getallmessage",{
             from:data._id,
             to:currentChat._id
           })
@@ -27,7 +27,7 @@ export default function ChatContainer({ currentChat,currentUser,socket}) {
   
   const handleSendMsg=async(msg)=>{
      const data= JSON.parse(localStorage.getItem('user'));
-     await axios.post("https://messging-application.herokuapp.com/api/message/addmessage",{
+     await axios.post("https://chatbotapplicationbackend.onrender.com/api/message/addmessage",{
       from: data._id,
       to: currentChat._id,
       message: msg,

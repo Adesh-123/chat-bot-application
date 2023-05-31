@@ -38,7 +38,7 @@ export default function Register() {
       try{
         const { email, username, password } = values;
         console.log({email,username,password});
-        const res= await axios.post("https://messging-application.herokuapp.com/api/auth/register", {
+        const res= await axios.post("https://chatbotapplicationbackend.onrender.com/api/auth/register", {
           username,
           email,
           password,

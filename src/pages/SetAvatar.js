@@ -29,7 +29,7 @@ export default function SetAvatar() {
         localStorage.getItem("user")
       );
      try{
-         const  res  = await axios.post(`https://messging-application.herokuapp.com/api/auth/setAvatar/${user._id}`, {
+         const  res  = await axios.post(`https://chatbotapplicationbackend.onrender.com/api/auth/setAvatar/${user._id}`, {
            image: avatars[selectedAvatar],
          });
           console.log(res);

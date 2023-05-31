@@ -45,7 +45,7 @@ export default function Login() {
     event.preventDefault();
     if(validateForm()){
       try{
-        const res =await axios.post("https://messging-application.herokuapp.com/api/auth/login",values);
+        const res =await axios.post("https://chatbotapplicationbackend.onrender.com/api/auth/login",values);
         if(res.data.status){
             toast.success("Successfully Registered",toastOptions);
             localStorage.setItem("user",JSON.stringify(res.data.user));

@@ -9,7 +9,7 @@ export default function Logout() {
     const id = await JSON.parse(
       localStorage.getItem("user")
     )._id;
-    const data = await axios.get(`https://messging-application.herokuapp.com/api/auth/logout/${id}`);
+    const data = await axios.get(`https://chatbotapplicationbackend.onrender.com/api/auth/logout/${id}`);
     if (data.status === 200) {
       localStorage.clear();
       history.push("/login");

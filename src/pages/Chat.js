@@ -24,13 +24,13 @@ export default function Chat() {
   }, []);
   useEffect(() => {
     if (currentUser) {
-      socket.current = io("https://messging-application.herokuapp.com/");
+      socket.current = io("https://chatbotapplicationbackend.onrender.com");
       socket.current.emit("add-user", currentUser._id);
     }
   }, [currentUser]);
   useEffect(() => {
         const getcontacts=async()=>{
-          const res = await axios.get(`https://messging-application.herokuapp.com/api/auth/getalluser/${currentUser._id}`);
+          const res = await axios.get(`https://chatbotapplicationbackend.onrender.com/api/auth/getalluser/${currentUser._id}`);
           setContacts(res.data);
         }
         currentUser && getcontacts();
